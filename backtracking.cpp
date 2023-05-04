@@ -36,7 +36,6 @@ bool solve(vector<int>& board, int row) {
         print_board(board);
         return true;
     }
-    
     bool found = false;
     for (int col = 0; col < board.size(); ++col) {
         if (is_valid(board, row, col)) {

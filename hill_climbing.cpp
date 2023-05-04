@@ -35,20 +35,6 @@ class NQueensProblem {
             return -attacks;
         }
 
-    vector<vector<int>> successors(vector<int>& state) {
-        vector<vector<int>> successors;
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                if (j != state[i]) {
-                    vector<int> successor = state;
-                    successor[i] = j;
-                    successors.push_back(successor);
-                }
-            }
-        }
-        return successors;
-    }
-
     vector<int> get_highest_valued_successor(vector<int>& state) {
         vector<int> best_state = state;
         int best_value = value(state);
@@ -112,7 +98,7 @@ int main() {
     vector<int> durations;
     for(int attempt = 0; attempt < attempts; attempt++) {
         auto start = chrono::high_resolution_clock::now();
-        bool solution = solve_n_queens(8, attempt);
+        bool solution = solve_n_queens(10, attempt);
         clock_t end_time = clock();
         auto end = chrono::high_resolution_clock::now();
         auto duration = chrono::duration_cast<chrono::microseconds>(end - start).count();

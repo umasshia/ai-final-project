@@ -12,7 +12,6 @@ The program is implemented in C++ and consists of the following classes and func
 
 - `NQueensProblem`: A class that represents the N-Queens problem. It contains the size of the chessboard and the initial state of the board (randomly generated).
 - `value()`: A method of the `NQueensProblem` class that calculates the number of conflicts (i.e., the number of pairs of queens that threaten each other) in a given state of the chessboard.
-- `successors()`: A method of the `NQueensProblem` class that generates all possible successor states of a given state by moving one queen to a different row in its column.
 - `get_highest_valued_successor()`: A method of the `NQueensProblem` class that returns the successor state with the highest value.
 - `hill_climbing()`: A function that implements the Hill Climbing algorithm to find the optimal solution for the N-Queens problem.
 - `solve_n_queens()`: A function that generates an instance of the N-Queens problem, applies the Hill Climbing algorithm to find the optimal solution, and returns a boolean indicating whether the solution was found.
