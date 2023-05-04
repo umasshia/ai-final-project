@@ -10,6 +10,6 @@ More information about each program can be found in their respective .md files.
     ./backtracking
 
     g++ -o hill_climbing hill_climbing.cpp
-    ./hill_climbings
+    ./hill_climbing
 
 ```
